@@ -30,8 +30,8 @@ $(document).ready(function(){
 $(document).keydown(function(event) {
   	if (event.keyCode == 88 ) {
   		$('.ryu-ready').finish().hide();
-  		$('.ryu-throwing').finish().hide();
-  		$('.ryu-still').finish().hide();
+  		//$('.ryu-throwing').finish().hide();
+  		//$('.ryu-still').finish().hide();
   		$('.ryu-cool').finish().show();
       event.preventDefault();
     }
@@ -40,8 +40,8 @@ $(document).keydown(function(event) {
 $(document).keyup(function(event) {
     if (event.keyCode == 88 ) {
       $('.ryu-ready').finish().show();
-      $('.ryu-throwing').finish().hide();
-      $('.ryu-still').finish().hide();
+      //$('.ryu-throwing').finish().hide();
+      //$('.ryu-still').finish().hide();
       $('.ryu-cool').finish().hide();
       event.preventDefault();
     }
