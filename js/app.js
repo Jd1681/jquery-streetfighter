@@ -30,9 +30,9 @@ $(document).ready(function(){
 $(document).keydown(function(event) {
   	if (event.keyCode == 88 ) {
   		event.preventDefault();
-  		$('ryu-ready').hide();
-  		$('ryu-throwing').hide();
-  		$('ryu-still').hide();
+  		$('.ryu-ready').hide();
+  		$('.ryu-throwing').hide();
+  		$('.ryu-still').hide();
   		$('.ryu-cool').show();
     }
 });
