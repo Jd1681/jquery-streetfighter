@@ -29,20 +29,20 @@ $(document).ready(function(){
 
 $(document).keydown(function(event) {
   	if (event.keyCode == 88 ) {
-  		$('.ryu-ready').hide();
-  		$('.ryu-throwing').hide();
-  		$('.ryu-still').hide();
-  		$('.ryu-cool').show();
+  		$('.ryu-ready').finish().hide();
+  		$('.ryu-throwing').finish().hide();
+  		$('.ryu-still').finish().hide();
+  		$('.ryu-cool').finish().show();
       event.preventDefault();
     }
 });
 
 $(document).keyup(function(event) {
     if (event.keyCode == 88 ) {
-      $('.ryu-ready').show();
-      $('.ryu-throwing').hide();
-      $('.ryu-still').hide();
-      $('.ryu-cool').hide();
+      $('.ryu-ready').finish().show();
+      $('.ryu-throwing').finish().hide();
+      $('.ryu-still').finish().hide();
+      $('.ryu-cool').finish().hide();
       event.preventDefault();
     }
 });
