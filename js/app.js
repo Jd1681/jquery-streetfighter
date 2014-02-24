@@ -29,11 +29,12 @@ $(document).ready(function(){
 
 $(document).keydown(function(event) {
   	if (event.which == 88 ) {
+  		event.preventDefault();
+  	}
   		$('ryu-ready').hide();
   		$('ryu-throwing').hide();
   		$('ryu-still').hide();
   		$('.ryu-cool').show();
-  	};
 });
 
 function playHadouken () {
