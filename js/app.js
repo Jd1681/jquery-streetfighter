@@ -37,6 +37,16 @@ $(document).keydown(function(event) {
     }
 });
 
+$(document).keyup(function(event) {
+    if (event.keyCode == 88 ) {
+      $('.ryu-ready').show();
+      $('.ryu-throwing').hide();
+      $('.ryu-still').hide();
+      $('.ryu-cool').hide();
+      event.preventDefault();
+    }
+});
+
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
