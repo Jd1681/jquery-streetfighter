@@ -33,7 +33,7 @@ $(document).keydown(function(event) {
   		//$('.ryu-throwing').finish().hide();
   		//$('.ryu-still').finish().hide();
   		$('.ryu-cool').toggleClass('active inactive');
-      event.preventDefault();
+      //event.preventDefault();
     }
 });
 
@@ -43,7 +43,7 @@ $(document).keyup(function(event) {
       //$('.ryu-throwing').finish().hide();
       //$('.ryu-still').finish().hide();
       $('.ryu-cool').toggleClass('active inactive');
-      event.preventDefault();
+      //event.preventDefault();
     }
 });
 
