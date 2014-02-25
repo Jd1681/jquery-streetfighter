@@ -34,9 +34,9 @@ body {
 	background-repeat: no-repeat;
 	}
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+/*.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
-}
+}*/
 
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');
