@@ -22,7 +22,7 @@ $(document).ready(function(){
   })
   .mouseup(function()  {
   	$('.ryu-throwing').toggleClass('active, inactive');
-  	$('.ryu-ready').show();
+  	$('.ryu-ready').toggleClass('active, inactive');
   	// ryu goes back to his ready position
   });
 });
