@@ -30,6 +30,7 @@ $(document).ready(function(){
 $(document).keydown(function(event) {
   	if (event.keyCode == 88 ) {
   		$('.ryu-ready').hide();
+      console.log('key down');
   		//$('.ryu-throwing').finish().hide();
   		//$('.ryu-still').finish().hide();
   		$('.ryu-cool').show();
@@ -40,6 +41,7 @@ $(document).keydown(function(event) {
 $(document).keyup(function(event) {
     if (event.keyCode == 88 ) {
       $('.ryu-ready').show();
+      console.log('key up');
       //$('.ryu-throwing').finish().hide();
       //$('.ryu-still').finish().hide();
       $('.ryu-cool').hide();
