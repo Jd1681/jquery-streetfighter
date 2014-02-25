@@ -25,9 +25,7 @@ $(document).ready(function(){
   	$('.ryu-ready').toggleClass('active inactive');
   	// ryu goes back to his ready position
   });
-});
-
-$(document).keydown(function(event) {
+$(body).keydown(function(event) {
   	if (event.keyCode == 88 ) {
   		$('.ryu-ready').toggleClass('active inactive');
       console.log('x down');
@@ -38,7 +36,7 @@ $(document).keydown(function(event) {
     }
 });
 
-$(document).keyup(function(event) {
+$(body).keyup(function(event) {
     if (event.keyCode == 88 ) {
       $('.ryu-ready').toggleClass('active inactive');
       console.log('x up');
@@ -47,6 +45,7 @@ $(document).keyup(function(event) {
       $('.ryu-cool').toggleClass('active inactive');
       //event.preventDefault();
     }
+});
 });
 
 function playHadouken () {
