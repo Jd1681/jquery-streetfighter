@@ -1,48 +1,48 @@
 $(document).ready(function(){
   $('.ryu').mouseenter(function() {
-  	$('.ryu-still').toggleClass('active, inactive');
-  	$('.ryu-ready').toggleClass('active, inactive');
+  	$('.ryu-still').toggleClass('active inactive');
+  	$('.ryu-ready').toggleClass('active inactive');
   })
   .mouseleave(function() {
-  	$('.ryu-ready').toggleClass('active, inactive');
-  	$('.ryu-still').toggleClass('active, inactive');
+  	$('.ryu-ready').toggleClass('active inactive');
+  	$('.ryu-still').toggleClass('active inactive');
   })
   .mousedown(function() {
    	playHadouken(); 	
-   	$('.ryu-ready').toggleClass('active, inactive');
-  	$('.ryu-throwing').toggleClass('active, inactive');
+   	$('.ryu-ready').toggleClass('active inactive');
+  	$('.ryu-throwing').toggleClass('active inactive');
   	$('.hadouken').finish().show()
   	.animate(
   		{'left': '1100px'},
   		500,
   		function()  {
-  			$(this).toggleClass('active, inactive');
+  			$(this).toggleClass('active inactive');
   			$(this).css('left','500px');
   		});
   })
   .mouseup(function()  {
-  	$('.ryu-throwing').toggleClass('active, inactive');
-  	$('.ryu-ready').toggleClass('active, inactive');
+  	$('.ryu-throwing').toggleClass('active inactive');
+  	$('.ryu-ready').toggleClass('active inactive');
   	// ryu goes back to his ready position
   });
 });
 
 $(document).keydown(function(event) {
   	if (event.keyCode == 88 ) {
-  		$('.ryu-ready').toggleClass('active, inactive');
+  		$('.ryu-ready').toggleClass('active inactive');
   		//$('.ryu-throwing').finish().hide();
   		//$('.ryu-still').finish().hide();
-  		$('.ryu-cool').toggleClass('active, inactive');
+  		$('.ryu-cool').toggleClass('active inactive');
       event.preventDefault();
     }
 });
 
 $(document).keyup(function(event) {
     if (event.keyCode == 88 ) {
-      $('.ryu-ready').toggleClass('active, inactive');
+      $('.ryu-ready').toggleClass('active inactive');
       //$('.ryu-throwing').finish().hide();
       //$('.ryu-still').finish().hide();
-      $('.ryu-cool').toggleClass('active, inactive');
+      $('.ryu-cool').toggleClass('active inactive');
       event.preventDefault();
     }
 });

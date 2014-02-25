@@ -34,9 +34,9 @@ body {
 	background-repeat: no-repeat;
 	}
 
-/*.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-still {
 	display: none;
-}*/
+}
 
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');
@@ -55,9 +55,5 @@ body {
 }
 
 .active {
-	display: block;
-}
-
-.inactive {
-	display: none;
+	display: block !important;
 }
