@@ -53,3 +53,11 @@ body {
 .ryu-cool {
 	background-image: url('../images/ryu-cool.gif');
 }
+
+.active {
+	display: block;
+}
+
+.inactive {
+	display: none;
+}
