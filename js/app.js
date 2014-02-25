@@ -16,7 +16,7 @@ $(document).ready(function(){
   		{'left': '1100px'},
   		500,
   		function()  {
-  			$(this).toggleClass('active inactive');
+  			$(this).hide();
   			$(this).css('left','500px');
   		});
   })
